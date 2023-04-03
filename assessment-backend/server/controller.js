@@ -20,4 +20,37 @@ module.exports = {
         res.status(200).send(randomFortune);
     },
 
+    getColor: (req, res) => {
+        const colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue'];
+
+        // choose random color
+        let randomIndex = Math.floor(Math.random() * colors.length);
+        let randomColor = colors[randomIndex];
+
+        res.status(200).send(randomColor);
+    },
+
+    getAnimal: (req, res) => {
+        const animals = ['Bear', 'Lion', 'Flamingo', 'Jaguar', 'Monkey'];
+
+        // choose random animal
+        let randomIndex = Math.floor(Math.random() * animals.length);
+        let randomAnimal = animals[randomIndex];
+
+        res.status(200).send(randomAnimal);
+    },
+
+    getCity: (req, res) => {
+        const cities = ['Berlin', 'Warsaw', 'Nairobi', 'Johannesberg', 'Kansas City'];
+
+        // choose random city
+        let randomIndex = Math.floor(Math.random() * cities.length);
+        let randomCity = cities[randomIndex];
+
+        res.status(200).send(randomCity);
+    },
+
+    
+
+
 }

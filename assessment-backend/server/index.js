@@ -15,4 +15,18 @@ const { getFortune } = require('./controller')
 
 app.get("/api/fortune", getFortune);
 
+const { getColor } = require('./controller')
+
+app.get("api/color", getColor);
+
+const { getAnimal } = require('./controller')
+
+app.get("api/animal", getAnimal);
+
+const { getCity } = require('./controller')
+
+app.get("api/city", getCity);
+
 app.listen(4000, () => console.log("Server running on 4000"));
+
+
