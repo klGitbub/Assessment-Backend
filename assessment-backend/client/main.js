@@ -56,4 +56,4 @@ const getCity = () => {
     });
 };
 
-fortuneButton.addEventListener('click', getCity)
+cityButton.addEventListener('click', getCity)
